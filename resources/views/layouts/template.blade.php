@@ -98,9 +98,11 @@
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
+                
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" style="border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #fff; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'" class="masthead-avatar mb-5" src="https://i.ibb.co/QYkZvqV/TECHNOLOGIES.png" alt="..." />
                 <!-- Masthead Heading-->
+                <!--<div id="particles-js" style="width:100%; height:100vh; background-color:#1bbc9d; margin:0; padding:0;"></div> -->
                 <h1 class="masthead-heading text-uppercase mb-0">José Manuel Vazquez Mendez</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -272,5 +274,7 @@ In terms of academic training, I completed my higher education at the Tepic Tech
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="js/particle.sim.js" ></script>
+        <script src="js/particlesjs-config.json" ></script>
     </body>
 </html>
