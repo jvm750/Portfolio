@@ -79,9 +79,9 @@
     </style>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Portfolio</a>
+        <nav class="navbar navbar-expand-lg  text-uppercase fixed-top" id="mainNav" style="background-color:#242629;" >
+            <div class="container" >
+                <a class="navbar-brand" href="#page-top" style="color:#7F5AF0;">Portfolio</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -90,20 +90,21 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Technologies</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Courses</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">About Me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
+        <header class="masthead  text-white text-center" style="background-color:#16161A;">
+            <div class="container d-flex align-items-center flex-column" >
                 
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" style="border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #fff; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'" class="masthead-avatar mb-5" src="https://i.ibb.co/QYkZvqV/TECHNOLOGIES.png" alt="..." />
                 <!-- Masthead Heading-->
                 <!--<div id="particles-js" style="width:100%; height:100vh; background-color:#1bbc9d; margin:0; padding:0;"></div> -->
-                <h1 class="masthead-heading text-uppercase mb-0">José Manuel Vazquez Mendez</h1>
+                <h1 class="masthead-heading text-uppercase mb-0" style="color:#7F5AF0;">José Manuel Vazquez Mendez</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -111,20 +112,18 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Computer Systems Engineering Student <br> Programming technician</p>
+                <p class="masthead-subheading font-weight-light mb-0">Computer Systems Engineering Student <br> Programming technician <br>FrontEnd Developer</p>
             </div>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="portfolio" style="background-color:#242629;">
             <div class="container">
                 
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">PROJECTS</h2>
+                <h2 class="page-section-heading text-center text-uppercase  mb-0" style="color:WHITE;">PROJECTS</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <div class="divider-custom" >
+                    <h1>__________________</h1>
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
@@ -133,59 +132,16 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section  text-white mb-0" id="about" style="background-color:#16161A;">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">TECHNOLOGIES</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <h1></h1>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto">
-                        <div class="card">
-                        <div class="first-content">
-                            <span>Languages ​​and web development</span>
-                        </div>
-                        <div class="second-content">
-                        <span>
-                        <td>
-                            
-                            <tr><p class="lead">Java</p></tr>
-                            <tr><p class="lead">C++</p></tr>
-                            <tr><p class="lead">JavaScript</p></tr>
-                            <tr><p class="lead">HTML</p></tr>
-                            <tr><p class="lead">CSS</p></tr>
-                            
-                        </td>
-                        </span>
-                        </div>
-                    </div>
-                    
-                </div>
+                <!-- CONTENIDO-->
                 
-                <div class="col-lg-4 me-auto">
-                    <div class="card">
-                        <div class="first-content">
-                            <span>Databases</span>
-                        </div>
-                        <div class="second-content">
-                            <span>
-                            <td>
-                            
-                                <tr><p class="lead">PostgreSQL</p></tr>
-                                <tr><p class="lead">MySQL</p></tr>
-                                <tr><p class="lead">MariaDB</p></tr>
-                            </td>
-                            </span>
-                        </div>
-                   
-                    </div>
-                    
-                </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
                 <i class="fa-brands fa-java fa-2xl" style="margin: 20px;"></i>
@@ -198,16 +154,47 @@
                 </div>
             </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
+
+
+
+        <section class="page-section" id="contact" style="background-color:#242629;">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">ABOUT Me</h2>
+                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">COMPLEMENTARY COURSES</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <P class="masthead-subheading font-weight-light mb-0" style="text-align: justify; margin-bottom: 1em;">I am a student within the career of
+                                            Computerstystems engineer,
+                                            with the conviction of overcoming
+                                            personal, organized, committed and
+                                            multifunctional.
+                                            In terms of academic training, I completed my higher education at the Tepic Technological Institute, during the period between 2020 and 2025. Before that, in the period from 2017 to 2020, I attended the Industrial and Services Technological Studies Centers No. 100, where I completed my high school studies. My basic education, which includes primary and secondary, was carried out at the Fernando Montaño Primary School and the República de Chile Secondary School, from 2009 to 2017. In addition to a complementary course on web programming at CECATI48. </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section text-white" id="contact" style="background-color:#16161A;">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">ABOUT Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
