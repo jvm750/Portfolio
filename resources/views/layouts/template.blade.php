@@ -251,6 +251,7 @@ In terms of academic training, I completed my higher education at the Tepic Tech
                         <a class="btn btn-outline-light btn-social mx-1" href="http://www.linkedin.com/in/jvm750"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jvm750/Portfolio"><i class="fa-brands fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/FB9CXdxG"><i class="fa-brands fa-discord"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://gitlab.com/portfolio9953604/Portfolio.git"><i class="fa-brands fa-gitlab"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
