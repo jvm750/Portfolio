@@ -75,12 +75,20 @@
         font-size: 1.8rem;
         transform: rotate(0deg);
         }
+        #mainNav a {
+            color: #7F5AF0;
+            transition: color 0.3s ease; /* Agregamos una transición suave de 0.3 segundos */
+        }
+
+        #mainNav a:hover {
+            color: #7F5AF0; /* Color que deseas cuando el mouse está sobre el enlace */
+        }
 
     </style>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg  text-uppercase fixed-top" id="mainNav" style="background-color:#242629;" >
-            <div class="container" >
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" style="background-color:#242629;">
+            <div class="container">
                 <a class="navbar-brand" href="#page-top" style="color:#7F5AF0;">Portfolio</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -88,10 +96,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Technologies</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Courses</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">About Me</a></li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded transition duration-300 hover:text-indigo-500" href="#portfolio">Projects</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded transition duration-300 hover:text-indigo-500" href="#about">Technologies</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded transition duration-300 hover:text-indigo-500" href="#about">Courses</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded transition duration-300 hover:text-indigo-500" href="#contact">About Me</a>
+                        </li>
                     </ul>
                 </div>
             </div>
