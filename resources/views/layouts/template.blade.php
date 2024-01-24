@@ -89,7 +89,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" style="background-color:#242629;">
             <div class="container">
-                <a class="navbar-brand" href="#page-top" style="color:#7F5AF0;">Portfolio</a>
+                <a class="navbar-brand" href="#page-top" style="color:#1BBD9C;">Portfolio</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -120,7 +120,7 @@
                 <img class="masthead-avatar mb-5" style="border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #fff; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'" class="masthead-avatar mb-5" src="https://i.ibb.co/QYkZvqV/TECHNOLOGIES.png" alt="..." />
                 <!-- Masthead Heading-->
                 <!--<div id="particles-js" style="width:100%; height:100vh; background-color:#1bbc9d; margin:0; padding:0;"></div> -->
-                <h1 class="masthead-heading text-uppercase mb-0" style="color:#7F5AF0;">José Manuel Vazquez Mendez</h1>
+                <h1 class="masthead-heading text-uppercase mb-0" style="color:#1BBD9C;">José Manuel Vazquez Mendez</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -157,7 +157,7 @@
                 <h1></h1>
                 </div>
                 <!-- CONTENIDO-->
-                
+                @yield('tech')
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
                 <i class="fa-brands fa-java fa-2xl" style="margin: 20px;"></i>
@@ -179,9 +179,7 @@
                 <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">COMPLEMENTARY COURSES</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
@@ -233,7 +231,7 @@ In terms of academic training, I completed my higher education at the Tepic Tech
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class="footer text-center" style="background-color:#242629">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->

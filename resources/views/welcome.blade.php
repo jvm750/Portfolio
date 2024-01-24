@@ -45,3 +45,7 @@
 
                                     @endforeach
 @endsection
+
+@section('tech')
+
+@endsection
