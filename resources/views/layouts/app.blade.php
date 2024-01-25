@@ -16,10 +16,42 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body style="overflow: hidden;">
-    <div id="app" style="background-color:#052F40;">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm c-white" style="background-color:#2D3F50;">
-            <div class="container" style="color: white;">
+<style>
+    .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #1BBC9D;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #16161A;
+}
+</style>
+<body style="overflow: hidden; background-color:#16161A;">
+    <div id="app" style="background-color:#16161A;">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm c-white" style="background-color:#242629;">
+            <div class="container" style="color: white; ">
                 <a class="navbar-brand" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 12px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ url('/') }} ">
                     {{ config('app.name', 'Laravel') }} - Portfolio
                 </a>

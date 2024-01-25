@@ -5,14 +5,14 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid" style="background-color: #052F40; width: 100%; height: 83vh; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+    <div class="container-fluid" style="background-color:#16161A; width: 100%; height: 83vh; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding-top:10px;">
         <div class="row" >
             <div class="col-sm-12" >
-                <div class="card" style="background-color: #2D3F50; color:white; box-shadow: rgba(27, 188, 157, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+                <div class="card" style="background-color:#242629; color:white;padding-top:10px;border: 1px solid #1BBC9D;">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
+                            <span id="card_title" style="color:#1BBC9D;font-size:20px">
                                 {{ __('Proyecto') }}
                             </span>
 
