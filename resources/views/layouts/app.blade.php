@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-light shadow-sm c-white" style="background-color:#2D3F50;">
             <div class="container" style="color: white;">
                 <a class="navbar-brand" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 12px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ url('/') }} ">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Laravel') }} - Portfolio
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -32,10 +32,14 @@
                     <ul class="navbar-nav me-auto"  >
                     @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 16px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ route('proyectos.index') }}">{{ __('Proyectos') }}</a>
+                                    <a class="nav-link" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 16px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ route('proyectos.index') }}">{{ __('Projects') }}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 16px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ route('technologies.index') }}">{{ __('Technologies') }}</a>
                                 </li>
                      @endif
                     </ul>
+                    
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
