@@ -24,9 +24,7 @@
     <div class="box-footer mt20">
         <br>
         <button type="submit" 
-        style="background-color: #1BBC9D; color: white; padding: 12px 22px; border: 2px solid #1BBC9D; border-radius: 8px; cursor: pointer; transition: background-color 0.3s ease, border 0.3s ease;"
-        onmouseover="this.style.backgroundColor='#16161A'; this.style.border='#16161A';"
-        onmouseout="this.style.backgroundColor='#1BBC9D'; this.style.border='#1BBC9D';"
+        style="background-color: #1BBC9D; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#16161A'; this.style.color='#1BBC9D'" onmouseout="this.style.backgroundColor='#1BBC9D'; this.style.color='white'" class="btn btn-primary"
         class="btn btn-primary">
     {{ __('Submit') }}
 </button>
