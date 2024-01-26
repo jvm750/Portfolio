@@ -25,7 +25,7 @@
         transition: all 0.4s;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-        font-size: 20px;
+        font-size: 10px;
         font-weight: 900;
         TEXT-align:center;
         padding:10px
@@ -83,6 +83,57 @@
         #mainNav a:hover {
             color: #7F5AF0; /* Color que deseas cuando el mouse está sobre el enlace */
         }
+        .card {
+        width: 200px;
+        height: 100px;
+        background: #07182E;
+        position: relative;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+        }
+
+        .card h2 {
+        z-index: 1;
+        color: white;
+        font-size: 2em;
+        }
+
+        .card::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        background-image: linear-gradient(180deg, #1BBC9D, white);
+        height: 400%;
+        animation: rotBGimg 3s linear infinite;
+        transition: all 0.2s linear;
+        }
+
+        @keyframes rotBGimg {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+        }
+
+        .card::after {
+        content: '';
+        position: absolute;
+        background: #07182E;
+        ;
+        inset: 5px;
+        border-radius: 15px;
+        }  
+        /* .card:hover:before {
+        background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+        animation: rotBGimg 3.5s linear infinite;
+        } */
+
 
     </style>
     <body id="page-top">
@@ -128,7 +179,12 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Computer Systems Engineering Student <br> Programming technician <br>FrontEnd Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Computer Systems Engineering Student <br> Programming technician </p>
+                <br>
+                <div class="card">
+                    <h2>Front-End Developer</h2>
+                </div>
+                
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -234,26 +290,30 @@ In terms of academic training, I completed my higher education at the Tepic Tech
         <footer class="footer text-center" style="background-color:#242629">
             <div class="container">
                 <div class="row">
+                <div class="col-lg-4 mb-2 mb-lg-0">
+                    <img src="https://i.ibb.co/pLHQSWs/J.png" style="width:90px; border-radius: 20px;" alt="">
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4" style="color=1BBC9D;">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="http://www.linkedin.com/in/jvm750"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jvm750/Portfolio"><i class="fa-brands fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/FB9CXdxG"><i class="fa-brands fa-discord"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://gitlab.com/portfolio9953604/Portfolio.git"><i class="fa-brands fa-gitlab"></i></a>
+                    </div>
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4" style="color=1BBC9D;">Location</h4>
                         <p class="lead mb-0">
                             Tepic, Nayarit, México
                             <br />
                             
                         </p>
                     </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="http://www.linkedin.com/in/jvm750"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/jvm750/Portfolio"><i class="fa-brands fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/FB9CXdxG"><i class="fa-brands fa-discord"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://gitlab.com/portfolio9953604/Portfolio.git"><i class="fa-brands fa-gitlab"></i></a>
-                    </div>
+                    
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">ALL RIGHTS RESERVED</h4>
+                        <h4 class="text-uppercase mb-4" style="color=1BBC9D;">ALL RIGHTS RESERVED</h4>
                         <p class="lead mb-0">
                             
                         2024 ITTepic. All rights reserved.
