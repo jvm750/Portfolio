@@ -49,3 +49,6 @@
 @section('tech')
 
 @endsection
+@section('courses')
+
+@endsection

@@ -5,26 +5,26 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+<section class="content container-fluid" style="background-color: #16161A; margin-top: auto;">
+    <div class="row" style="background-color: #16161A; width: 100%; height: 83vh; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+        <div class="col-md-12">
 
-                @includeif('partials.errors')
+            @includeif('partials.errors')
 
-                <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">{{ __('Create') }} Technology</span>
-                    </div>
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('technologies.store') }}"  role="form" enctype="multipart/form-data">
-                            @csrf
+            <div class="card card-default" style="background-color: #242629; color: white; border: 1px solid #1BBC9D;">
+                <div class="card-header">
+                    <span class="card-title" style="color: #1BBC9D; font-size: 20px;">{{ __('Create') }} Technology</span>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{{ route('technologies.store') }}" role="form" enctype="multipart/form-data">
+                        @csrf
 
-                            @include('technology.form')
+                        @include('technology.form')
 
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 @endsection
