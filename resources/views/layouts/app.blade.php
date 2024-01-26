@@ -70,6 +70,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 16px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ route('technologies.index') }}">{{ __('Technologies') }}</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white; border: none; cursor: pointer; transition: color 0.3s, font-size 0.3s; font-size: 16px;" onmouseover="this.style.color='#1BBC9D'; this.style.fontSize='120%'" onmouseout="this.style.color='white'; this.style.fontSize='16px'" href="{{ route('courses.index') }}">{{ __('Courses') }}</a>
+                                </li>
                      @endif
                     </ul>
                     

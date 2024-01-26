@@ -52,3 +52,6 @@
 @section('courses')
 
 @endsection
+@section('areas')
+
+@endsection

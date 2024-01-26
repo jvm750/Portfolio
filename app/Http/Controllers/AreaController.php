@@ -2,29 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
+use App\Models\Area;
 use Illuminate\Http\Request;
 
 /**
- * Class CourseController
+ * Class AreaController
  * @package App\Http\Controllers
  */
-class CourseController extends Controller
+class AreaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct(){
-        $this->middleware('auth');
-    } 
     public function index()
     {
-        $courses = Course::paginate();
+        $areas = Area::paginate();
 
-        return view('course.index', compact('courses'))
-            ->with('i', (request()->input('page', 1) - 1) * $courses->perPage());
+        return view('area.index', compact('areas'))
+            ->with('i', (request()->input('page', 1) - 1) * $areas->perPage());
     }
 
     /**
@@ -34,8 +31,8 @@ class CourseController extends Controller
      */
     public function create()
     {
-        $course = new Course();
-        return view('course.create', compact('course'));
+        $area = new Area();
+        return view('area.create', compact('area'));
     }
 
     /**
@@ -46,12 +43,12 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate(Course::$rules);
+        request()->validate(Area::$rules);
 
-        $course = Course::create($request->all());
+        $area = Area::create($request->all());
 
-        return redirect()->route('courses.index')
-            ->with('success', 'Course created successfully.');
+        return redirect()->route('areas.index')
+            ->with('success', 'Area created successfully.');
     }
 
     /**
@@ -62,9 +59,9 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        $course = Course::find($id);
+        $area = Area::find($id);
 
-        return view('course.show', compact('course'));
+        return view('area.show', compact('area'));
     }
 
     /**
@@ -75,26 +72,26 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        $course = Course::find($id);
+        $area = Area::find($id);
 
-        return view('course.edit', compact('course'));
+        return view('area.edit', compact('area'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  Course $course
+     * @param  Area $area
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, Area $area)
     {
-        request()->validate(Course::$rules);
+        request()->validate(Area::$rules);
 
-        $course->update($request->all());
+        $area->update($request->all());
 
-        return redirect()->route('courses.index')
-            ->with('success', 'Course updated successfully');
+        return redirect()->route('areas.index')
+            ->with('success', 'Area updated successfully');
     }
 
     /**
@@ -104,9 +101,9 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        $course = Course::find($id)->delete();
+        $area = Area::find($id)->delete();
 
-        return redirect()->route('courses.index')
-            ->with('success', 'Course deleted successfully');
+        return redirect()->route('areas.index')
+            ->with('success', 'Area deleted successfully');
     }
 }
