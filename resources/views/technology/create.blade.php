@@ -13,13 +13,13 @@
 
             <div class="card card-default" style="background-color: #242629; color: white; border: 1px solid #1BBC9D;">
                 <div class="card-header">
-                    <span class="card-title" style="color: #1BBC9D; font-size: 20px;">{{ __('Create') }} Technology</span>
+                    <span class="card-title" style="color: #1BBC9D; font-size: 20px;">{{ __('Create') }} Area</span>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('technologies.store') }}" role="form" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('areas.store') }}" role="form" enctype="multipart/form-data">
                         @csrf
 
-                        @include('technology.form')
+                        @include('area.form')
 
                     </form>
                 </div>
@@ -27,4 +27,5 @@
         </div>
     </div>
 </section>
+
 @endsection
