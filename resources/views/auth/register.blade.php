@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container" style="background-color: #052F40;">
-    <div class="row justify-content-center" style="background-color: #052F40; width: 100%; height: 83vh; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+<div class="container" style="background-color: #16161A;">
+    <div class="row justify-content-center" style="background-color: #16161A; width: 100%; height: 83vh; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
         <div class="col-md-8">
-            <div class="card" style="background-color: #2D3F50; color:white; box-shadow: rgba(27, 188, 157, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
-                <div class="card-header">{{ __('Register') }}</div>
+            <div class="card" style="background-color: #242629; color:white;border: 1px solid #1BBC9D;">
+                
+            <center><div class="card-header" style="font-size: 24px; color: #1BBC9D; font-weight: bold; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#1BBC9D'">{{ __('Register') }}</div></center>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -63,7 +64,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button style="background-color:#052840; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#052840'" onmouseout="this.style.backgroundColor='#2D3F50'"" class="btn btn-primary" type="submit" class="btn btn-primary">
+                                <button style="background-color: #1BBC9D; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#16161A'; this.style.color='#1BBC9D'" onmouseout="this.style.backgroundColor='#1BBC9D'; this.style.color='white'" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
                             </div>

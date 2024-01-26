@@ -43,8 +43,8 @@
 
                         <div class="mb-0">
                         <button type="submit" style="background-color: #1BBC9D; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#16161A'; this.style.color='#1BBC9D'" onmouseout="this.style.backgroundColor='#1BBC9D'; this.style.color='white'" class="btn btn-primary">
-                            {{ __('Login') }}
-                        </button>
+                    {{ __('Login') }}
+                </button>
 
                         @if (Route::has('password.request'))
                             <a style="color: #1BBC9D; text-decoration: none;" onmouseover="this.style.color='#FFFEFE'" onmouseout="this.style.color='#1BBC9D'" class="btn btn-link" href="{{ route('password.request') }}">
