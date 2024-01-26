@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Proyecto;
 use App\Models\Technology;
 use App\Models\Course;
+use App\Models\Area;
 use Illuminate\Http\Request;
+
 
 class PortafolioController extends Controller
 {
@@ -18,6 +20,8 @@ class PortafolioController extends Controller
         return view('welcome',compact('technologies'));
         $courses = Course::paginate();
         return view('welcome',compact('courses'));
+        $areas = Area::paginate();
+        return view('welcome',compact('areas'));
     }
     //
 }

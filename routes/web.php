@@ -20,5 +20,6 @@ Auth::routes();
 Route::resource('/proyectos',App\Http\Controllers\ProyectoController::class);
 Route::resource('/technologies',App\Http\Controllers\TechnologyController::class);
 Route::resource('/courses',App\Http\Controllers\CourseController::class);
+Route::resource('/areas',App\Http\Controllers\AreaController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
